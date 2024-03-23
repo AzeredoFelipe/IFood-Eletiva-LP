@@ -57,7 +57,6 @@ nav {
     background-color: #0056b3; /* Cor de fundo azul mais escura ao passar o mouse */
 }
 
-
 #menu, #footer-submenu-frios, #footer-submenu-padaria {
     list-style: none;
     padding: 0;
@@ -89,8 +88,6 @@ body {
     padding: 50px; /* Adiciona um espaçamento interno para evitar que o conteúdo encoste nas bordas da imagem */
     
 }
-    
-
 
 #footer-submenu-frios {
     margin-top: 250px;
