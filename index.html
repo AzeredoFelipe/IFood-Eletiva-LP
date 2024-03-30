@@ -10,7 +10,6 @@
 <body>
     <nav>
         <div id="nav-container">
-            <!-- Coloque a imagem dentro da tag <a> -->
             <a href="#"><img src="ifood.png" alt="Logo"></a>
 
             <ul id="menu">
@@ -18,24 +17,25 @@
                 <li class="item"><a href="#">Restaurante e Mercado</a></li>
                 <li class="item"><a href="#">Carreiras</a></li>
                 <li class="item"><a href="#">iFood Card</a></li>
-                <li id="criar-conta-entrar">
-                    <span id="criar-conta">Criar conta</span>
-                    <button id="entrar">Entrar</button>
-                </li>
             </ul>
+
+            <div id="criar-entrar-container">
+                <span id="criar-conta">Criar conta</span>
+                <button id="entrar">Entrar</button>
+            </div>
         </div>
     </nav>
     <main>
         <div class="centralizado">
-            <p>Faça mercado no iFood</p>
-            <p>Entregamos tudo o que precisa na porta da sua casa, de hortifruti a itens de limpeza</p>
+            <p class="titulo">Faça mercado no iFood</p>
+            <p class="descricao">Entregamos tudo o que precisa na porta da sua casa, de hortifruti a itens de limpeza</p>
             <div id="busca">
                 <input type="text" id="address" placeholder="Em qual endereço você está?">
-                <button id="search-button">Ver Mercados Próximos</button>
+                <button id="search-button" class="search-button">Ver Mercados Próximos</button>
             </div>
         </div>
-    </main>    
-    <footer>
+    </main> 
+    <footer>   
         <ul id="footer-submenu-frios">
             <li class="item"><a href="#">Frios</a></li>
             <li class="item"><a href="#">Laticínios</a></li>

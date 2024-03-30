@@ -1,13 +1,13 @@
-/* Estilos gerais */
 body {
     background-image: url('fundo.jpeg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
+/* Estilos do cabeçalho */
 nav {
     background-color: #fff;
     position: fixed;
@@ -19,18 +19,28 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 140px;
+}
+#nav-container {
+    display: flex;
+    align-items: center;
 }
 
 #menu {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Define o menu como flexível */
+    display: flex;
 }
 
-#criar-conta-entrar {
+#menu .item {
+    margin-right: 20px;
+}
+
+#criar-entrar-container {
     display: flex; /* Define o container do criar conta e entrar como flexível */
     align-items: center; /* Alinha os itens verticalmente */
+    margin-left: auto;
 }
 
 #criar-conta {
@@ -38,18 +48,33 @@ nav {
 }
 
 #entrar {
-    margin-left: 20px;
+    /* Remove a margem para que o botão "Entrar" fique colado à esquerda */
+    margin-left: 0;
+}
+
+/* Estilos dos ícones */
+#menu i {
+    margin-right: 5px;
 }
 
 /* Estilos da seção centralizada */
 .centralizado {
-    margin-top: 150px;
+    margin-top: 220px;
     text-align: center;
+}
+
+.titulo {
+    font-size: 44px; /* Altere o tamanho da fonte conforme necessário */
+    margin-bottom: 1px;
+}
+
+.descricao {
+    font-size: 18px; /* Altere o tamanho da fonte conforme necessário */
 }
 
 /* Estilos da seção de busca */
 #busca {
-    margin-top: 30px;
+    margin-top: 65px;
     text-align: center;
 }
 
@@ -79,14 +104,16 @@ nav {
 footer {
     width: 100%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 #footer-submenu-frios, #footer-submenu-padaria {
+    text-decoration: none;
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: -50px;
+    
 }
 
 #footer-submenu-frios li, #footer-submenu-padaria li {
@@ -94,10 +121,11 @@ footer {
     margin-right: 20px;
 }
 
+#menu a, #footer-submenu-frios li a, #footer-submenu-padaria li a {
+    text-decoration: none;
+}
+
 #footer-submenu-frios li:last-child, #footer-submenu-padaria li:last-child {
     margin-right: 0;
 }
 
-#footer-submenu-padaria li.padaria {
-    clear: both;
-}
