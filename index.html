@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">  
 </head>
 <body>
-    <nav>
-        <div id="nav-container">
-            <a href="#"><img src="ifood.png" alt="Logo"></a>
+    <div class="container">
+        <nav>
+            <a href="#" class="logo"><img src="ifood.png" alt="Logo"></a>
 
             <ul id="menu">
                 <li class="item"><a href="#">Entregador</a></li>
@@ -20,11 +20,12 @@
             </ul>
 
             <div id="criar-entrar-container">
-                <span id="criar-conta">Criar conta</span>
+                <li class="item"><a href="#" id="criar-conta">ciar conta</a></li>
                 <button id="entrar">Entrar</button>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div> 
+    <div class="imagem-fundo"></div> 
     <main>
         <div class="centralizado">
             <p class="titulo">Faça mercado no iFood</p>
@@ -48,22 +49,26 @@
     </footer>
     <footer>
         <ul id="footer-submenu-padaria">
-            <li class="item padaria"><a href="#">Padaria</a></li>
+            <li class="item"><a href="#">Padaria</a></li>
             <li class="item"><a href="#">Higiene</a></li>
             <li class="item"><a href="#">Congelados</a></li>
-            <li class="item"><a href="#">Carnes</a></li>
+            <li class="item"><a href="#">Bebidas</a></li>
             <li class="item"><a href="#">Cerveja</a></li>
+            
         </ul>
     </footer>
-    <div class="restaurante">
-        <h2>Restaurante</h2>
-        <button>Ver Opções</button>
-    </div>
-    <div class="mercado">
-        <h2>Mercado</h2>
-        <button>Ver Opções</button>
-    </div>
-               
+    <main class="centro">
+        <div class="restaurante">
+            <a href="#"><img src="lanche.avif" alt="Logo"></a>
+            <h2>Restaurante</h2>
+            <button>Ver Opções</button>
+        </div>
+        <div class="mercado">
+            <a href="#"><img src="mercado.avif" alt="Logo"></a>
+            <h2>Mercado</h2>
+            <button>Buscar lojas</button>
+        </div>
+    </main>
     
     <script src="script.js"></script>
 </body>

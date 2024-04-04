@@ -1,13 +1,25 @@
 body {
-    background-image: url('fundo.jpeg');
-    background-size: cover;
-    background-position: top;
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Estilos do cabeçalho */
+.container {
+    position: relative;
+}
+
+.imagem-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fundo.jpeg'); /* Caminho para a imagem de fundo desejada */
+    background-size: cover;
+    background-position: center top;
+    z-index: -1; /* Para garantir que a imagem de fundo fique atrás de todos os outros elementos */
+}
+
 nav {
     background-color: #fff;
     position: fixed;
@@ -20,17 +32,31 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 140px;
+    padding: 0 20px;
 }
+
+.logo {
+    margin-right: 20px;
+}
+
 #nav-container {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
+
+.container img {
+    width: 120px; /* Defina o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
 
 #menu {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    margin-right: 650px;
 }
 
 #menu .item {
@@ -38,13 +64,27 @@ nav {
 }
 
 #criar-entrar-container {
+    position: absolute;
+    left: 1100px;
     display: flex; /* Define o container do criar conta e entrar como flexível */
     align-items: center; /* Alinha os itens verticalmente */
-    margin-left: auto;
+    margin-left: 20px;
+
+}
+
+#criar-entrar-container a {
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+#criar-entrar-container li {
+    list-style: none; /* Remove o ponto */
+    display: inline; /* Para que o "li" não quebre a linha */
 }
 
 #criar-conta {
     margin-right: 10px;
+    text-decoration: none; /* Remove o sublinhado */
+    list-style: none; /* Remove o ponto */
 }
 
 #entrar {
@@ -127,6 +167,78 @@ footer {
 
 #footer-submenu-frios li:last-child, #footer-submenu-padaria li:last-child {
     margin-right: 0;
+}
+
+.centro {
+    display: flex;
+    justify-content: center; /* Distribui os elementos igualmente na horizontal com espaço entre eles */
+    align-items: center;
+    margin-top: 200px; /* Ajuste conforme necessário */
+}
+
+.restaurante {
+    width: 300px; /* Defina a largura dos quadrados conforme necessário */
+    height: 200px; /* Defina a altura dos quadrados conforme necessário */
+    background-color: lightblue; /* Cor de fundo dos quadrados */
+    text-align: center;
+    margin: 0 20px; /* Espaçamento horizontal entre os quadrados */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.restaurante img {
+    position: absolute; /* Posição absoluta */
+    bottom: 0; /* Alinha na parte inferior */
+    right: 0; /* Alinha na parte direita */
+    width: 150px; /* Defina a largura da imagem conforme necessário */
+    height: auto;  
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.restaurante{    
+    background-color: lightblue; /* Cor de fundo dos quadrados */
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 20px; /* Adiciona espaço interno */
+    border-radius: 10px; /* Borda arredondada */
+    position: relative; /* Para posicionar a imagem de forma absoluta */
+}
+
+.restaurante button, .mercado button {
+    margin-top: 0; /* Remove o espaço superior */
+    width: 120px; /* Defina a largura desejada */
+    height: 30px; /* Defina a altura desejada */
+    font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.restaurante h2, .restaurante button, .mercado h2, .restaurante button {
+    margin-top: 0; /* Remove o espaço superior */
+}
+
+.mercado {
+    position: relative; /* Define o posicionamento relativo */
+    width: 300px; /* Defina a largura dos quadrados conforme necessário */
+    height: 200px; /* Defina a altura dos quadrados conforme necessário */
+    background-color: lightblue; /* Cor de fundo dos quadrados */
+    text-align: left;
+    margin: 0 20px; /* Espaçamento horizontal entre os quadrados */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px; /* Borda arredondada */
+    padding: 20px; /* Adiciona espaço interno */
+}
+
+.mercado img {
+    position: absolute; /* Posição absoluta */
+    bottom: 0; /* Alinha na parte inferior */
+    right: 0; /* Alinha na parte direita */
+    border-radius: 10px; /* Borda arredondada */
+    margin: 0 -20px -20px 0; /* Ajusta a margem para evitar o corte */
+    width: 150px; /* Defina a largura da imagem conforme necessário */
+    height: auto;
+    margin: 0 auto 10px; /* Margem inferior para separar a imagem do texto */
 }
 
 
