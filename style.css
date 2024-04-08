@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial,Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -177,50 +177,84 @@ footer {
 }
 
 .restaurante {
-    width: 300px; /* Defina a largura dos quadrados conforme necessário */
+    position: relative;
+    width: 30%; /* Defina a largura dos quadrados conforme necessário */
     height: 200px; /* Defina a altura dos quadrados conforme necessário */
-    background-color: lightblue; /* Cor de fundo dos quadrados */
     text-align: center;
+    background-color:#ff0000; /* Cor de fundo dos quadrados */
     margin: 0 20px; /* Espaçamento horizontal entre os quadrados */
     display: flex;
     flex-direction: column;
     justify-content: center;
+  
 }
 
 .restaurante img {
     position: absolute; /* Posição absoluta */
     bottom: 0; /* Alinha na parte inferior */
     right: 0; /* Alinha na parte direita */
-    width: 150px; /* Defina a largura da imagem conforme necessário */
+    width: 220px; /* Defina a largura da imagem conforme necessário */
     height: auto;  
     border-radius: 10px; /* Borda arredondada */
+
+
 }
 
 .restaurante{    
-    background-color: lightblue; /* Cor de fundo dos quadrados */
+    
     text-align: left; /* Alinha o texto à esquerda */
     padding: 20px; /* Adiciona espaço interno */
     border-radius: 10px; /* Borda arredondada */
     position: relative; /* Para posicionar a imagem de forma absoluta */
+    font-size: 26px;
 }
 
 .restaurante button, .mercado button {
-    margin-top: 0; /* Remove o espaço superior */
+    position: absolute;
+    top: 150px; /* Remove o espaço superior */
     width: 120px; /* Defina a largura desejada */
     height: 30px; /* Defina a altura desejada */
     font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
     border-radius: 10px; /* Borda arredondada */
 }
 
+.restaurante h2, .mercado h2{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    margin: 0;
+
+}
+
 .restaurante h2, .restaurante button, .mercado h2, .restaurante button {
     margin-top: 0; /* Remove o espaço superior */
 }
 
+.restaurante h2, .mercado h2 {
+    position: absolute;
+    top: 10%;
+    left: 10px;
+    margin: 0;
+    font-size: 4vw; /* Tamanho da fonte responsivo */
+}
+
+@media screen and (max-width: 768px) {
+    .restaurante h2, .mercado h2 {
+        font-size: 6vw; /* Ajuste para telas menores */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .restaurante h2, .mercado h2 {
+        font-size: 8vw; /* Ajuste para telas ainda menores */
+    }
+}
+
 .mercado {
     position: relative; /* Define o posicionamento relativo */
-    width: 300px; /* Defina a largura dos quadrados conforme necessário */
+    width: 30%; /* Defina a largura dos quadrados conforme necessário */
     height: 200px; /* Defina a altura dos quadrados conforme necessário */
-    background-color: lightblue; /* Cor de fundo dos quadrados */
+    background-color: #228b22; /* Cor de fundo dos quadrados */
     text-align: left;
     margin: 0 20px; /* Espaçamento horizontal entre os quadrados */
     display: flex;
@@ -228,6 +262,7 @@ footer {
     justify-content: center;
     border-radius: 10px; /* Borda arredondada */
     padding: 20px; /* Adiciona espaço interno */
+    font-size: 26px;
 }
 
 .mercado img {
@@ -236,7 +271,7 @@ footer {
     right: 0; /* Alinha na parte direita */
     border-radius: 10px; /* Borda arredondada */
     margin: 0 -20px -20px 0; /* Ajusta a margem para evitar o corte */
-    width: 150px; /* Defina a largura da imagem conforme necessário */
+    width: 220px; /* Defina a largura da imagem conforme necessário */
     height: auto;
     margin: 0 auto 10px; /* Margem inferior para separar a imagem do texto */
 }
